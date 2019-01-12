@@ -1,0 +1,35 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 500px) {
+  .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .col {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+	.navigation-bar {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    margin-left: auto;
+  }
+  .main-header {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .banner {
+    min-height: 600px;
+  }
+  .headline {
+    font-size: 2em;
+  }
+}
