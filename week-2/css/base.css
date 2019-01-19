@@ -64,12 +64,29 @@ img {
   margin-left: auto;
   cursor: pointer;
 }
-.main-nav {
-  display: none;
+.close-button {
+  width: 44px;
+  height: 44px;
+  padding: 6px;
+  margin: 9px 11px 0px auto;
+  cursor: pointer;
 }
-.main-nav.show {
+.main-nav {
+  position: fixed;
+  top: 0;
+  right: -206px;
   display: flex;
   flex-direction: column;
+  min-width: 200px;
+  height: 100%;
+  max-height: 100%;
+  box-shadow: -3px 0px 3px rgba(0,0,0,.5);
+  overflow-y: auto;
+  transition: right ease-in-out .5s, background ease-in-out .5s;
+}
+.main-nav.show {
+  right: 0px;
+  background: #fff;
 }
 .name a,
 .main-nav a {
@@ -118,6 +135,9 @@ img {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
+}
+.row-hidden {
+  display: none;
 }
 .col {
 	padding: 1em;
