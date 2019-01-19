@@ -4,14 +4,17 @@
   find the ​max number​ of passing numbers
   with array.sort()
 */
+console.log('Assignment 1: Function and Array');
 function max(...numbers) {
   let maxNumber;
   numbers.sort();
   maxNumber = numbers[numbers.length - 1];
   return maxNumber;
 }
-max(1, 2, 4, 5);
-max(5, 2, 7, 1, 6);
+
+console.log('#with array.sort()');
+console.log('max(1, 2, 4, 5):', max(1, 2, 4, 5));
+console.log('max(5, 2, 7, 1, 6):', max(5, 2, 7, 1, 6));
 
 /* 
   find the ​max number​ of passing numbers
@@ -26,10 +29,14 @@ function max2(...numbers) {
   });
   return maxNumber;
 }
-max2(1, 2, 4, 5);
-max2(5, 2, 7, 1, 6);
+
+console.log('#with array.forEach()');
+console.log('max(1, 2, 4, 5):', max(1, 2, 4, 5));
+console.log('max(5, 2, 7, 1, 6):', max(5, 2, 7, 1, 6));
+console.log('------------------------------------------');
 
 // Assignment 2: Object
+console.log('Assignment 2: Object');
 
 function calculate(args) {
   let result;
@@ -49,7 +56,8 @@ const testCalculate1 = {
   "n1": 20,
   "n2": 30
 }
-calculate(testCalculate1);
+
+console.log('calculate(testCalculate1);', calculate(testCalculate1));
 
 // way2
 class Calculate {
@@ -60,9 +68,12 @@ class Calculate {
   }
 }
 const testCalculate2 = new Calculate("-", 50, 30);
-calculate(testCalculate2);
+
+console.log('calculate(testCalculate2);', calculate(testCalculate2));
+console.log('------------------------------------------');
 
 // Assignment 3: Function, Array, and Object
+console.log('Assignment 3: Function, Array, and Object');
 
 function avg(data) {
   let totalPrice = 0;
@@ -75,7 +86,7 @@ function avg(data) {
   return averagePrice;
 }
 
-avg({
+const avgAnswer = avg({
   size: 3,
   products: [
     {
@@ -92,7 +103,11 @@ avg({
     }]
 });
 
+console.log('averagePrice:', avgAnswer);
+console.log('------------------------------------------');
+
 // Assignment 5: Algorithm Practice (Advanced Optional)
+console.log('Assignment 5: Algorithm Practice (Advanced Optional)');
 
 function twoSum(nums, target) {
   let indicesOfTwoSum;
@@ -108,3 +123,5 @@ function twoSum(nums, target) {
   });
   return indicesOfTwoSum;
 }
+
+console.log('twoSum([2, 7, 11, 15], 9):', twoSum([2, 7, 11, 15], 9));
