@@ -1,9 +1,11 @@
+const body = document.querySelector('body');
 const mainNav = document.querySelector('.main-nav');
 const navBar = document.querySelector('.navigation-bar');
 navBar.addEventListener('click', toggleNavBar);
 
 function toggleNavBar(e) {
   mainNav.classList.toggle('show');
+  body.classList.add('dimmed');
 }
 
 const closeButton = document.querySelector('.close-button');
@@ -11,6 +13,7 @@ closeButton.addEventListener('click', closeNavBar);
 
 function closeNavBar(e) {
   mainNav.classList.remove('show');
+  body.classList.remove('dimmed');
 }
 
 function changeWelcomeText(e) {

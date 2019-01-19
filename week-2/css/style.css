@@ -36,3 +36,19 @@
     font-size: 2em;
   }
 }
+
+.dimmed:after {
+  position: fixed;
+  top: 0;
+  right: 0;
+  content: '';
+  background-color: rgba(0,0,0,.4);
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .5s;
+  will-change: opacity;
+  z-index: 1000;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 1 !important;
+}

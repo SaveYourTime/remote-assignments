@@ -48,6 +48,7 @@ img {
   width: 100%;
   background: #fff;
   box-shadow: 0 4px 3px rgba(0,0,0,.5);
+  z-index: 1001;
 }
 .main-title {
   display: flex;
