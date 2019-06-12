@@ -17,8 +17,10 @@
     display: none;
   }
   .main-nav {
-    display: flex;
+    flex-direction: row;
     margin-left: auto;
+    max-height: unset;
+    opacity: 1;
   }
   .main-header {
     flex-direction: row;

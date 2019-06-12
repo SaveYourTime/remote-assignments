@@ -7,6 +7,7 @@
   <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/index.js"></script>
 </head>
 
 <body>
@@ -29,63 +30,54 @@
     <span class="tagline">為您建立東北亞各大首都的橋樑</span>
   </div>
 
-  <div class="row-title">
-    <h2>旅客服務專區</h2>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="card">
-        <img src="img/jay-wennington-2065-unsplash.jpg" alt="" class="card-img" />
-        <div class="card-content">
-          <h3 class="card-header">Restaurants & Shops</h3>
+  <main>
+    <div class="row-title">
+      <h2>旅客服務專區</h2>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <img src="img/restaurants.jpg" alt="" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-header">Restaurants & Shops</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/airport-hall.jpg" alt="" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-header">Facilities and Services</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/sun-rise.jpg" alt="" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-header">Weather</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/parking.jpg" alt="" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-header">Parking Lot</h3>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
-        <img src="img/erik-odiin-539947-unsplash.jpg" alt="" class="card-img" />
-        <div class="card-content">
-          <h3 class="card-header">Facilities and Services</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="img/nikola-ancevski-531651-unsplash.jpg" alt="" class="card-img" />
-        <div class="card-content">
-          <h3 class="card-header">Weather</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="img/john-matychuk-393455-unsplash.jpg" alt="" class="card-img" />
-        <div class="card-content">
-          <h3 class="card-header">Parking Lot</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  </main>
   <section class="row-footer">
     <button class="ui button">Call to Action</button>
   </section>
 
   <footer class="main-footer">
     <div class="footer-inner">
-      <span>&copy;2019 SaveYourTime</span>
+      <span>SaveYourTime &copy;2019 Created by Aaron Lu</span>
     </div>
   </footer>
-
-  <script>
-    const navBar = document.querySelector('.navigation-bar');
-    navBar.addEventListener('click', toggleNavBar);
-
-    function toggleNavBar(e) {
-      const mainNav = document.querySelector('.main-nav');
-      mainNav.classList.toggle('show');
-    }
-  </script>
 </body>
 
 </html>

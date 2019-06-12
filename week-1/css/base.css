@@ -65,11 +65,16 @@ img {
   cursor: pointer;
 }
 .main-nav {
-  display: none;
-}
-.main-nav.show {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  max-height: 1px;
+  transition: all .5s ease;
+  opacity: 0;
+}
+.main-nav.show {
+  max-height: 200px;
+  opacity: 1;
 }
 .name a,
 .main-nav a {
@@ -103,7 +108,7 @@ img {
 	color: #fff;
   background: linear-gradient(#F2994A, transparent 90%),
               linear-gradient(0deg, #fff, transparent),
-              #F2994A url('../img/josue-isai-ramos-figueroa-587073-unsplash.jpg') no-repeat center;
+              #F2994A url('../img/banner.jpg') no-repeat center;
   background-size: cover;
 	padding: 1em 0;
   margin-bottom: 24px;
