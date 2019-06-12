@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
-  <title>Document</title>
   <style>
     #positiveNumberInput {
-      box-shadow: unset;
       background: unset;
       color: unset;
     }
-  </style>
-  <script>
-    const xhr = new XMLHttpRequest();
 
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        document.getElementById('ajax').textContent = xhr.responseText;
-      }
-    };
-
-    function sendAJAX() {
-      const number = document.getElementById('positiveNumberInput').value;
-      const url = `/getData?number=${number}`;
-      xhr.open('GET', url);
-      xhr.send();
+    #answer {
+      margin: 10px 20px;
     }
-  </script>
+
+    @media screen and (max-width: 410px) {
+      #positiveNumberInput {
+        box-sizing: border-box;
+        width: 100%;
+      }
+
+      #submitButton {
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  </style>
+  <script defer src="js/sum.js"></script>
 </head>
 
 <body>
@@ -41,10 +42,8 @@
             <h1>Enter a number and get the sum of the number from server.</h1>
           </div>
           <input type="number" min="1" id="positiveNumberInput" class="button" />
-          <button id="load" onclick="sendAJAX()" class="button">Bring it!</button>
-          <p id="ajax">
-
-          </p>
+          <button id="submitButton" class="button">Bring it!</button>
+          <p id="answer"></p>
         </div>
       </div>
     </div>
@@ -52,4 +51,3 @@
 </body>
 
 </html>
-</div>

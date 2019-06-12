@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
-  <title>Document</title>
   <style>
     #nameInput {
       box-shadow: unset;
@@ -14,6 +15,7 @@
       color: unset;
     }
   </style>
+  <script defer src="js/register.js"></script>
 </head>
 
 <body>
@@ -25,36 +27,13 @@
             <h1>Please enter your name.</h1>
           </div>
           <form>
-            <input type="text" min="1" id="nameInput" class="button"/>
+            <input type="text" min="1" id="nameInput" class="button" />
             <input type="submit" class="button" id="submitButton" value="Submit" />
           </form>
         </div>
       </div>
     </div>
   </div>
-  <script>
-    const submitButton = document.getElementById('submitButton');
-    submitButton.addEventListener('click', register);
-
-    function register(e) {
-      e.preventDefault();
-
-      const name = document.getElementById('nameInput').value;
-      if (!name) return alert('Please enter your name first before submitting!');
-
-      const xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          location.href="/myName";
-        }
-      };
-      
-      const url = `/trackName?name=${name}`;
-      xhr.open('GET', url);
-      xhr.send();
-    }
-  </script>
 </body>
 
 </html>
-</div>
