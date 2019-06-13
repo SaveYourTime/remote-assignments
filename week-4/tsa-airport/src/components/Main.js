@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import ContentTitle from '../components/ContentTitle';
-import Content from '../components/Content';
+import React from 'react';
+import ContentTitle from './ContentTitle';
+import Content from './Content';
 import Pic1 from '../img/jay-wennington-2065-unsplash.jpg';
 import Pic2 from '../img/erik-odiin-539947-unsplash.jpg';
 import Pic3 from '../img/nikola-ancevski-531651-unsplash.jpg';
@@ -25,15 +25,15 @@ const pics = [
   }
 ];
 
-class MainContent extends Component {
-  render() {
-    return (
-      <div>
-        <ContentTitle title="旅客服務專區" />
-        <Content className="content" pics={pics} />
-      </div>
-    );
-  }
+function MainContent(props) {
+  const { hideCards } = props;
+  if (hideCards === true) return null;
+  return (
+    <main>
+      {hideCards === undefined && <ContentTitle title="旅客服務專區" />}
+      <Content className="content" pics={pics} />
+    </main>
+  );
 }
 
 export default MainContent;

@@ -13,8 +13,7 @@
 }
 
 @media (min-width: 800px) {
-  .navigation-bar,
-  .close-button {
+  .navigation-bar, .close-button {
     display: none;
   }
   .main-nav {
@@ -42,7 +41,7 @@
   top: 0;
   right: 0;
   content: '';
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0, 0, 0, .4);
   overflow: hidden;
   opacity: 0;
   transition: opacity .5s;
