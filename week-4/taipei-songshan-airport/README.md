@@ -6,7 +6,7 @@ TSA Website build by React using Hooks.
 
 ## Demo
 
-Here is a working live demo : https://saveyourtime.github.io/taipei-songshan-airport/build/
+Here is a working live demo : https://saveyourtime.github.io/taipei-songshan-airport/
 
 ## Technologies
 
