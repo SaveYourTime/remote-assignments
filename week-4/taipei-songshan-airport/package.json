@@ -1,5 +1,5 @@
 {
-  "name": "tsa-airport",
+  "name": "taipei-songshan-airport",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,7 +9,7 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -31,5 +31,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://saveyourtime.github.io/tsa-airport"
+  "homepage": "https://saveyourtime.github.io/taipei-songshan-airport"
 }
